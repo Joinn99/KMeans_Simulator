@@ -1,0 +1,4 @@
+/home/joinn/KMeans/build/CMakeFiles/rebuild_cache.dir
+/home/joinn/KMeans/build/CMakeFiles/KMeansSimmulator.dir
+/home/joinn/KMeans/build/CMakeFiles/edit_cache.dir
+/home/joinn/KMeans/build/CMakeFiles/KMeansSimmulator_autogen.dir
