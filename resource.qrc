@@ -1,0 +1,15 @@
+<RCC>
+    <qresource prefix="/icon">
+        <file>res/add.png</file>
+        <file>res/pause.png</file>
+        <file>res/play.png</file>
+        <file>res/arrow-right.png</file>
+        <file>res/arrow-left.png</file>
+        <file>res/logo.png</file>
+        <file>res/logo-notext.png</file>
+        <file>res/Coord.png</file>
+    </qresource>
+    <qresource prefix="/theme">
+        <file>res/Default-0.qss</file>
+    </qresource>
+</RCC>

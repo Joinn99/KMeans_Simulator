@@ -1,0 +1,106 @@
+*{
+    font-family: "Garamond","Segoe UI","helvetica","Microsoft Yahei Light","STHeiti","Arial","verdana";
+    font-weight: 490;
+    font-size: 18px;
+}
+
+QMainWindow{
+    background: #212121;
+}
+
+/**********QSpinBox*********/
+QSpinBox {
+    color: #fafafa;
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #515151, stop: 0.2 #4D4D4D,
+                                stop: 0.7 #383838, stop: 1.0 #333333);
+    padding: 0px;
+    border-radius: 6px;
+    font-size: 17px;
+    font-weight: 470;
+}
+
+QSpinBox:!enabled {
+    color: #8a8a8a;
+}
+
+QSpinBox::down-button {
+    subcontrol-origin: border;
+    width: 14px;
+    height: 24px;
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #515151, stop: 0.2 #4D4D4D,
+                                stop: 0.7 #383838, stop: 1.0 #333333);
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-right: 1px solid #8a8a8a;
+    subcontrol-position: center left;
+}
+
+QSpinBox::up-button {
+    subcontrol-origin: border;
+    width: 14px;
+    height: 24px;
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #515151, stop: 0.2 #4D4D4D,
+                                stop: 0.7 #383838, stop: 1.0 #333333);
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border-left: 1px solid #8a8a8a;
+    subcontrol-position: center right;
+}
+
+QSpinBox::up-arrow{
+    subcontrol-origin: content;
+    subcontrol-position: center center;
+    width: 16px;
+    height: 8px;
+    image: url(:/icon/res/arrow-right.png);
+}
+
+QSpinBox::down-arrow{
+    subcontrol-origin: content;
+    subcontrol-position: center center;
+    width: 16px;
+    height: 8px;
+    image: url(:/icon/res/arrow-left.png);
+}
+
+/********QToolButton********/
+
+QToolButton{
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #414141, stop: 0.2 #3D3D3D,
+                                stop: 0.7 #282828, stop: 1.0 #232323);
+    color: #fafafa;
+    border: 0px;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+QToolButton:hover {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                            stop: 0 #313131, stop: 0.2 #2D2D2D,
+                            stop: 0.7 #181818, stop: 1.0 #131313);
+    border: 0px;
+}
+
+QToolButton:!enabled {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                        stop: 0 #464646, stop: 0.2 #404040,
+                        stop: 0.7 #323232, stop: 1.0 #292929);
+    color: #8a8a8a;
+    border: 0px;
+}
+
+/**********QLabel***********/
+QLabel {
+    color: #dadada;
+}
+
+QLabel#labelHeader {
+    font-size: 20px;
+    font-weight: 560;
+    color: #ffffff;
+}
