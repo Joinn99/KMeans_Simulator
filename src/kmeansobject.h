@@ -6,7 +6,6 @@
 #include <QTimer>
 #include <QtMath>
 #include <QPointF>
-#include <QRandomGenerator>
 
 class KMeansObject : public QObject
 {

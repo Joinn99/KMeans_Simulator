@@ -9,8 +9,8 @@ KMeansObject::KMeansObject(QObject *parent, int patNumber, int cluNumber, QPoint
     vectorCompactness.resize(cluNumber);
     vectorCriterion.resize(4);
     for(int j = 0; j < vectorProtoPoint.size(); j++){
-        vectorProtoPoint[j] = QPointF(QRandomGenerator::global()->bounded(50, bound.x() - 50),
-                                      QRandomGenerator::global()->bounded(50, bound.y() - 50));
+        vectorProtoPoint[j] = QPointF(50 + qrand() % (bound.x() - 100),
+                                      50 + qrand() % (bound.y() - 100));
     }
     for(int i = 0; i < vectorPatPoint.size(); i++){
         vectorPatPoint[i] = pointGenerator(bound);
@@ -116,13 +116,13 @@ int KMeansObject::patGroup(int index)
 
 QPointF KMeansObject::pointGenerator(QPoint bound)
 {
-    double pointx = qPow(QRandomGenerator::global()->bounded(
-                             qSqrt(bound.x()/vectorProtoPoint.size())),2) / 2;
-    double pointy = qPow(QRandomGenerator::global()->bounded(
-                             qSqrt(bound.y()/vectorProtoPoint.size())),2) / 2;
-    QPointF point = vectorProtoPoint[QRandomGenerator::global()->bounded(vectorProtoPoint.size())] +
-                                QPointF(QRandomGenerator::global()->bounded(2) ? pointx : -pointx,
-                                        QRandomGenerator::global()->bounded(2) ? pointy : -pointy);
+    double pointx = qPow(double(qrand() % 10000) / 10000 *
+                             qSqrt(bound.x()/vectorProtoPoint.size()),2) / 2;
+    double pointy = qPow(double(qrand() % 10000) / 10000 *
+                             qSqrt(bound.y()/vectorProtoPoint.size()),2) / 2;
+    QPointF point = vectorProtoPoint[qrand() % vectorProtoPoint.size()] +
+                                QPointF((qrand() % 2) ? pointx : -pointx,
+                                        (qrand() % 2) ? pointy : -pointy);
     if(point.x() > bound.x()){point.rx() -= 2 * pointx;}
     else if(point.x() < 0){point.rx() += 2 * pointx;}
     if(point.y() > bound.y()){point.ry() -= 2 * pointy;}

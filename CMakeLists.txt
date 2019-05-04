@@ -3,7 +3,7 @@
 
 cmake_minimum_required(VERSION 3.1.0)
 
-project(KMeansSimmulator)
+project(KMeansSimulator)
 
 set(EXECUTABLE_OUTPUT_PATH ${CMAKE_SOURCE_DIR}/bin)
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
