@@ -1,3 +1,7 @@
+/*       KMeans Simulator       */
+/*        Author: 卫天峻         */
+/*       kmeansdisplay.h        */
+/*  描述： K-Means 显示对象定义    */
 #ifndef KMEANSDISPLAY_H
 #define KMEANSDISPLAY_H
 

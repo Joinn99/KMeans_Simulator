@@ -1,3 +1,7 @@
+/*       KMeans Simulator       */
+/*        Author: 卫天峻         */
+/*        mainwindow.h          */
+/*      描述：主窗口对象定义       */
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 

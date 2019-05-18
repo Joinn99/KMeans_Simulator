@@ -1,3 +1,7 @@
+/*       KMeans Simulator       */
+/*        Author: 卫天峻         */
+/*          main.cpp            */
+/*         描述：主程序           */
 #include "mainwindow.h"
 #include <QApplication>
 
